@@ -1,6 +1,7 @@
-import 'package:cores_module/cores_module.dart';
+
 import 'package:flutter_project_starter/examples/comments/data/models/comment.dart';
 import 'package:flutter_project_starter/examples/comments/domain/repo/comment_repository.dart';
+import 'package:flutter_project_starter/export.dart';
 
 @Injectable(as: CommentRepository)
 class CommentRepositoryImpl implements CommentRepository {

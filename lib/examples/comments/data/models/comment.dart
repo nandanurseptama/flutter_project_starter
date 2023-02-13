@@ -1,4 +1,5 @@
-import 'package:cores_module/cores_module.dart';
+import 'package:flutter_project_starter/cores/cores_module.dart';
+import 'package:flutter_project_starter/export.dart';
 
 part 'comment.g.dart';
 

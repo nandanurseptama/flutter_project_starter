@@ -1,6 +1,6 @@
-import 'package:cores_module/results/failure.dart';
-import 'package:cores_module/results/network_failure.dart';
 import 'package:dio/dio.dart';
+import 'package:flutter_project_starter/cores/results/failure.dart';
+import 'package:flutter_project_starter/cores/results/network_failure.dart';
 
 Failure remoteDataSourceErrorCatcher(e) {
   if (e is DioError) {

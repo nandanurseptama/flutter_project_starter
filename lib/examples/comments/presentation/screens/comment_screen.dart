@@ -21,7 +21,8 @@ class _CommentsScreenState extends State<CommentsScreen> {
         centerTitle: true,
       ),
       body: BlocProvider<CommentsBloc>(
-        create: (context) => widget.commentsBloc..add(CommentsEvent.loadSingleComment(1)),
+        create: (context) =>
+            widget.commentsBloc..add(CommentsEvent.loadSingleComment(1)),
         child: SafeArea(
           child: LayoutBuilder(
             builder: (_, constraints) {

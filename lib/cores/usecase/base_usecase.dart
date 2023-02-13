@@ -1,5 +1,4 @@
-import 'package:cores_module/results/failure.dart';
-import 'package:cores_module/usecase/result_usecase.dart';
+import 'package:flutter_project_starter/cores/cores_module.dart';
 import 'package:uuid/uuid.dart';
 
 abstract class BaseUsecase<Params, Result> {
@@ -8,6 +7,9 @@ abstract class BaseUsecase<Params, Result> {
   BaseUsecase({required Uuid uuidGenerator}) : _uuidGenerator = uuidGenerator;
 
   bool _isLoading = false;
+  bool get isLoading => _isLoading;
+  String get uuid => _uuid;
+  
   String _uuid = "";
 
   Future<Result> calling(String uuid, Params params);

@@ -21,13 +21,3 @@ export 'results/network_failure.dart'
 
 export 'usecase/base_usecase.dart' show BaseUsecase;
 export 'usecase/result_usecase.dart' show ResultUsecase, Ok, Fail;
-export 'dependency.dart' show configureDependency;
-
-// third-party module
-export 'package:dio/dio.dart';
-export 'package:freezed_annotation/freezed_annotation.dart';
-export 'package:equatable/equatable.dart';
-export 'package:uuid/uuid.dart';
-export 'package:bloc/bloc.dart';
-export 'package:get_it/get_it.dart';
-export 'package:injectable/injectable.dart';

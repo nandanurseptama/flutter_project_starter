@@ -1,4 +1,6 @@
-import 'package:cores_module/results/failure.dart';
+
+
+import 'package:flutter_project_starter/cores/results/failure.dart';
 
 class BadRequestFailure extends Failure {
   BadRequestFailure({super.message = Failure.badRequestFailureMessage});
@@ -41,9 +43,12 @@ class ResponseFailure extends Failure {
   factory ResponseFailure.fromJson(
       {required Map<String, dynamic> json, required String messageErrorKey}) {
     return ResponseFailure(
-        message: json[messageErrorKey] ?? Failure.invalidResponseDataTypeErrorMessage);
+        message: json[messageErrorKey] ??
+            Failure.invalidResponseDataTypeErrorMessage);
   }
 }
+
 class NoDataResponseFailure extends Failure {
-  NoDataResponseFailure({ super.message = Failure.nullableResponseDataErrorMessage});
+  NoDataResponseFailure(
+      {super.message = Failure.nullableResponseDataErrorMessage});
 }

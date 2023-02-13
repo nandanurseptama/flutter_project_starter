@@ -1,6 +1,5 @@
-import 'package:cores_module/remote_datasource/remote_datasource.dart';
-
 import 'package:dio/dio.dart';
+import 'package:flutter_project_starter/cores/remote_datasource/remote_datasource.dart';
 import 'package:injectable/injectable.dart';
 
 @Injectable(as: RemoteDatasource)
